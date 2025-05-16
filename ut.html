@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vagre Charan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f2f2f2;
+      color: #111;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 8%;
+      background: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "PORTFOLIO";
+      font-size: 6rem;
+      color: rgba(106, 15, 212, 0.05);
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .hero .text {
+      max-width: 600px;
+      z-index: 1;
+    }
+
+    .hero .text p.intro {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero .text h1 {
+      font-size: 4rem;
+      color: #6a0fd4;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .hero .text h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #333;
+      margin: 0.5rem 0 2rem;
+    }
+
+    .hero .stats {
+      display: flex;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .stat {
+      background: #f7f7f7;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .stat h3 {
+      font-size: 1.5rem;
+      color: #6a0fd4;
+    }
+
+    .stat p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .handle {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      gap: 0.5rem;
+    }
+
+    .handle p {
+      font-weight: 600;
+    }
+
+    .hero .image {
+      max-width: 400px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero .image img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .quote {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: bold;
+      font-size: 1rem;
+      color: #222;
+    }
+
+    .arrow-text {
+      position: absolute;
+      right: 28%;
+      top: 30%;
+      color: #111;
+      font-size: 1rem;
+    }
+
+    .arrow-text::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: -60px;
+      width: 50px;
+      height: 50px;
+      border: 2px dashed #333;
+      border-radius: 50%;
+      border-right: none;
+      border-bottom: none;
+      transform: rotate(-45deg);
+    }
+
+    .arrow-text.second {
+      top: 42%;
+      right: 20%;
+    }
+
+    .arrow-text.third {
+      top: 55%;
+      right: 15%;
+    }
+
+    .arrow-text.third::before {
+      display: none;
+    }
+    .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #6a0fd4;
+  font-weight: 800;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #6a0fd4;
+}
+
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+        <h1 class="logo">Hola!</h1>
+        <ul class="nav-links">
+            <li><a href="service.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        </nav>
+  <section class="hero">
+    <div class="text">
+      <p class="intro">God is a Designer !</p>
+      <h1>Hello, I’m <br><span style="color:#6a0fd4;">Vagre Charan</span></h1>
+      <h2>Freelance Web Developer</h2>
+
+      <div class="stats">
+        <div class="stat">
+          <h3>0+</h3>
+          <p>Satisfied Clients</p>
+        </div>
+        <div class="stat">
+          <h3>01+</h3>
+          <p>Years of Work Experience</p>
+        </div>
+        <div class="stat">
+          <h3>00+</h3>
+          <p>Project Completed</p>
+        </div>
+      </div>
+      <p>
+        Hi! I'm a passionate front-end web developer just getting started on my freelance journey, and I'm excited to help bring your vision to life on the web. I specialize in creating clean, responsive, and user-friendly websites using HTML, CSS, JavaScript, and modern frameworks like React or Vue.
+        <br><br>
+        Let’s build something great together! Feel free to reach out—I’d love to hear about your project.
+      </p>
+      <div class="handle">
+        <img src="Screenshot 2024-09-06 091233.png" alt="Charan DP" style="width:40px;height:40px;border-radius:50%;">
+        <p>Vagre Charan<br /><small>@mr___cherry___7</small></p>
+      </div>
+    </div>
+    <div class="image">
+        <img src="img.png.png" alt="Vagre Charan">
+      </div>
+      
+</body>
+</html>
